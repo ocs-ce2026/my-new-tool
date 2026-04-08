@@ -344,3 +344,31 @@ small {
         font-size: 1.5rem;
     }
 }
+/* Tip Box */
+.tip-box {
+    background: rgba(129, 140, 248, 0.05);
+    border-left: 4px solid var(--primary);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0 12px 12px 0;
+}
+
+.tip-box h4 {
+    color: var(--primary-dark);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.tip-box h4 i {
+    font-size: 1rem;
+}
+
+.tip-box p {
+    font-size: 0.88rem;
+    color: var(--text-main);
+    line-height: 1.5;
+}
