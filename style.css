@@ -1,18 +1,19 @@
 :root {
-    --primary: #6366f1; /* Indigo 500 */
-    --primary-light: #818cf8;
-    --primary-dark: #4f46e5;
-    --secondary: #9333ea; /* Purple 600 */
-    --accent: #f43f5e; /* Rose 500 */
-    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
-    --card-bg: rgba(255, 255, 255, 0.05);
-    --card-border: rgba(255, 255, 255, 0.1);
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --input-bg: rgba(255, 255, 255, 0.03);
+    --primary: #818cf8; /* Soft Indigo */
+    --primary-light: #a5b4fc;
+    --primary-dark: #6366f1;
+    --secondary: #c084fc; /* Soft Purple */
+    --accent: #fb7185; /* Soft Rose */
+    --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --card-border: rgba(0, 0, 0, 0.08);
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --input-bg: #ffffff;
     --sidebar-width: 280px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --glass-blur: blur(12px);
+    --glass-blur: blur(16px);
+    --shadow-soft: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -39,7 +40,7 @@ body {
 /* Sidebar */
 .sidebar {
     width: var(--sidebar-width);
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(255, 255, 255, 0.45);
     backdrop-filter: var(--glass-blur);
     border-right: 1px solid var(--card-border);
     padding: 2rem;
@@ -189,8 +190,8 @@ textarea {
 textarea:focus, input:focus {
     outline: none;
     border-color: var(--primary);
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(129, 140, 248, 0.15);
 }
 
 small {
@@ -225,13 +226,14 @@ small {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--input-bg);
     color: var(--text-main);
     border: 1px solid var(--card-border);
+    box-shadow: var(--shadow-soft);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: #f1f5f9;
 }
 
 .btn-outline {
@@ -275,9 +277,10 @@ small {
     background: var(--card-bg);
     backdrop-filter: var(--glass-blur);
     border: 1px solid var(--card-border);
-    border-radius: 20px;
-    padding: 2rem;
+    border-radius: 24px;
+    padding: 2.5rem;
     margin-bottom: 2rem;
+    box-shadow: var(--shadow-soft);
 }
 
 .placeholder {
