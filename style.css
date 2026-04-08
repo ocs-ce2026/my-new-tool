@@ -72,9 +72,7 @@ body {
 }
 
 .brand-text span {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--text-muted);
+    font-weight: 700;
 }
 
 .progress-nav {
