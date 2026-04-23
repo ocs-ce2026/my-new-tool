@@ -415,7 +415,7 @@ small {
 
 /* Footer */
 .main-footer {
-    margin-top: 5rem;
+    margin-top: 10rem;
     padding: 4rem 0 2rem;
     border-top: 1px solid var(--card-border);
     /* text-align: center; */
